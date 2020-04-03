@@ -1,17 +1,17 @@
 # American-Express-Analyze-This- 2016
 This was a PAN-IIT data science competition in which I secured 5th rank finally on the leaderboard.The competition was attended by more than 900 students, across all IITs and BITs campuses in India. 
 
-Problem Background :
+### Problem Background :
 
 The Island of Hoenn is gearing up for upcoming polls. Citizens are waiting with bated breath as news agencies reveal their predictions on which party is likely to emerge victorious. Much to the disappointment of all the citizens, there are discrepancies in these poll predictions amongst news channels. So many inconsistent predictions did not go down well with an inquisitive bunch of students. Wondering how difficult it might be to crack it, comes their 'Eureka' moment. An idea to create their own ‘Start Up’ to analyze poll sentiments and predict the winner. A start up called - Analyze This. They gather data for a sample of citizens of Island of Hoenn and get started. Information on historical voting pattern, rally attendance and demographics is what they have at hand to predict the winner amongst the 5 competing parties.
 
 Can you help these students crack this puzzle? Do you have it in you to start your own Analyze This?
 
-Problem Statement :
+### Problem Statement :
 
 You have to predict the party for which each citizen will vote for in the upcoming polls.
 
-Data for Analysis :
+### Data for Analysis :
 
 Following files can be downloaded for your analysis.
 
@@ -25,7 +25,7 @@ Data_Dictionary.xlsx: This sheet will give you the description of all the variab
 
 Please note that you can make multiple submissions corresponding to the Leaderboard Dataset. However, for the Final dataset you can submit only one solution. For further details, please refer to the submission guidelines document available at the link below: http://in.axpcampus.com/AnalyzeThis/campusactivity/guidelines-and-submission.php
 
-Tips on Data Analysis
+### Tips on Data Analysis :
 
 Following are some tips for the uninitiated on how you can approach this data analysis game. Any exercise in the field of data analytics would start with understanding the data. So, start off by understanding the datasets and descriptions provided to you. Once you are familiar with the data, try to answer these questions: 1. What all data do I have? 2. What all data is useful and what is junk? 3. How can I organize this data to solve my problem?
 
@@ -37,7 +37,7 @@ Keep fine tuning your estimates by trying to increase your leader board scores. 
 
 You can use any tool, write your own algorithms, and implement any predictive modeling/Data analysis methods you may want to. For your final submission, you will have to provide details of the techniques you have used.
 
-Evaluation Criteria
+### Evaluation Criteria :
 
 Leader board Submission The dataset for Leader board evaluation would be evaluated on the basis of the estimation that you provide. The score is calculated as: a. If Actual Vote = Predicted Vote and Actual Vote = Historical Vote, then score = 50 b. If Actual Vote = Predicted Vote and Actual Vote ^= Historical Vote, then score = 100 c. If Actual Vote ^= Predicted Vote and Actual Vote = Historical Vote, then score = 0 d. If Actual Vote ^= Predicted Vote and Actual Vote ^= Historical Vote, then score = -50
 

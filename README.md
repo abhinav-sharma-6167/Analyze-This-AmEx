@@ -1,5 +1,5 @@
 # American-Express-Analyze-This- 2016
-This was a PAN-IIT data science competition in which I secured 8th rank finally on the leaderboard.The competition was attended by more than 900 students, across all IITs and BITs campuses in India. 
+This was a PAN-IIT data science competition in which I secured 5th rank finally on the leaderboard.The competition was attended by more than 900 students, across all IITs and BITs campuses in India. 
 
 Problem Background :
 

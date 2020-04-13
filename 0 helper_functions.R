@@ -1,18 +1,3 @@
-oneVsAll <- function(X,Y,FUN,...) {
-  models <- lapply(unique(Y), function(x) {
-    name <- as.character(x)
-    .Target <- factor(ifelse(Y==name,name,'other'), levels=c(name, 'other'))
-    dat <- data.frame(.Target, X)
-    model <- FUN(.Target~., data=dat, ...)
-    return(model)
-  })
-  names(models) <- unique(Y)
-  info <- list(X=X, Y=Y, classes=unique(Y))
-  out <- list(models=models, info=info)
-  class(out) <- 'oneVsAll'
-  return(out)
-}
-
 predict.oneVsAll <- function(object, newX=object$info$X, ...) {
   stopifnot(class(object)=='oneVsAll')
   lapply(object$models, function(x) {
@@ -35,6 +20,23 @@ preds <- predict(myModels, X, type='probs')
 preds <- data.frame(lapply(preds, function(x) x[,2])) #Make a data.frame of probs
 preds <- classify(preds)
 confusionMatrix(preds$Class, Y)
+
+                           
+oneVsAll <- function(X,Y,FUN,...) {
+  models <- lapply(unique(Y), function(x) {
+    name <- as.character(x)
+    .Target <- factor(ifelse(Y==name,name,'other'), levels=c(name, 'other'))
+    dat <- data.frame(.Target, X)
+    model <- FUN(.Target~., data=dat, ...)
+    return(model)
+  })
+  names(models) <- unique(Y)
+  info <- list(X=X, Y=Y, classes=unique(Y))
+  out <- list(models=models, info=info)
+  class(out) <- 'oneVsAll'
+  return(out)
+}
+
 
 
 

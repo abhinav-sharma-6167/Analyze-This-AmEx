@@ -307,7 +307,7 @@ x2[,target:=NULL]
 x2 <- as.matrix(x2)
 testing2 <- as.matrix(testing2)
 
-#XGBOOST
+#XGBOOST - Iteration1
 train.xg = xgb.DMatrix(x2, label=yy, missing=NA)
 test.xg = xgb.DMatrix(testing2, missing=NA)
 param <- list(max_depth = 10,

@@ -182,7 +182,7 @@ testing$mvar300 <- copy(testing$mvar3)
 testing$mvar400 <- copy(testing$mvar4)
 testing$mvar500 <- copy(testing$mvar5)
 
-#NEW_FEATURES
+#NEW_FEATURES - Test out key hypothesis
 x$mvar100[x$party_voted_past==0] <- x$mvar1[x$party_voted_past==0]+1.6*mean(x$mvar1[x$party_voted_past==0])
 x$mvar100[x$party_voted_past==1] <- x$mvar1[x$party_voted_past==1]+1.6*mean(x$mvar1[x$party_voted_past==1])
 x$mvar100[x$party_voted_past==2] <- x$mvar1[x$party_voted_past==2]+1.6*mean(x$mvar1[x$party_voted_past==2])

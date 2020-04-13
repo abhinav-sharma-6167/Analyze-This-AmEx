@@ -183,6 +183,7 @@ test.xg = xgb.DMatrix(testing, missing=NA)
 # }
 
 
+#Bayesian Optimized Iteration
 param <- list(max_depth = 10,
               eta = 0.15,
               silent = 0,

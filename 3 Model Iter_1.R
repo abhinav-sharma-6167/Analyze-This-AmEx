@@ -54,7 +54,7 @@ start_time <- Sys.time()
 set.seed(123)
 
 
-
+#RF experimentation
 model_rf <- randomForest(as.factor(actual_vote) ~ .,data=train, importance=TRUE,ntree =1000, mtry=3 , do.trace=TRUE )
 
 end_time <- Sys.time()

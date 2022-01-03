@@ -1,4 +1,4 @@
-# American-Express-Analyze-This- 2016
+# American Express - Analyze This'16
 This was a PAN-IIT data science competition organized by American Express in 2016 wherein my submission ranked 5th on the leaderboard. The competition was attended by more than 900 students, across all IITs and BITs campuses in India. Following is the problem description, as provided and summary of the approaches undertaken.
 
 ### Problem Background :

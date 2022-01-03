@@ -1,5 +1,5 @@
 # American-Express-Analyze-This- 2016
-This was a PAN-IIT data science competition in which I secured 5th rank finally on the leaderboard.The competition was attended by more than 900 students, across all IITs and BITs campuses in India. 
+This was a PAN-IIT data science competition organized by American Express in 2016 wherein my submission ranked 5th on the leaderboard. The competition was attended by more than 900 students, across all IITs and BITs campuses in India. Following is the problem description, as provided and summary of the approaches undertaken.
 
 ### Problem Background :
 
@@ -21,21 +21,19 @@ Leaderboard_Dataset.csv: This data has information on the historical vote for a 
 
 Final_Dataset.csv: This data has information on the historical vote for a different set of citizens, along with donation, rally attendance and demographics. The vote in the upcoming polls is not present in the data.
 
+Please note that you can make multiple submissions corresponding to the Leaderboard Dataset. However, for the Final dataset you can submit only one solution
+
 Data_Dictionary.xlsx: This sheet will give you the description of all the variables contained in the 3 datasets above.
 
-Please note that you can make multiple submissions corresponding to the Leaderboard Dataset. However, for the Final dataset you can submit only one solution. For further details, please refer to the submission guidelines document available at the link below: http://in.axpcampus.com/AnalyzeThis/campusactivity/guidelines-and-submission.php
 
-### Tips on Data Analysis :
+### Analysis and Modelling :
+- Outlier treatment
+- Missing Values Imputation with categorical averages
+- Feature engineering based on interaction effects amidst variables
+- Benchmark solutions using XGBoost
+- Multiple experiements with varies features and models such as SVMs
+- Ensembled final solution from outputs of best XGB, several one-class SVMs and few MLPs.
 
-Following are some tips for the uninitiated on how you can approach this data analysis game. Any exercise in the field of data analytics would start with understanding the data. So, start off by understanding the datasets and descriptions provided to you. Once you are familiar with the data, try to answer these questions: 1. What all data do I have? 2. What all data is useful and what is junk? 3. How can I organize this data to solve my problem?
-
-Then, try to build the variables on the training dataset, define dependent and independent variables and then start modeling on the Training Dataset. You need to match the citizen’s choice of vote.
-
-Once you are satisfied with your model, use it on the Leaderboard dataset and come up with your estimates of poll results for each citizen. Follow the submission guidelines and upload your estimates. Your submission will be evaluated in real time and you can compare how well you have estimated against other participants.
-
-Keep fine tuning your estimates by trying to increase your leader board scores. Once satisfied, use the same logic to estimate the vote preference of citizens in the final dataset.
-
-You can use any tool, write your own algorithms, and implement any predictive modeling/Data analysis methods you may want to. For your final submission, you will have to provide details of the techniques you have used.
 
 ### Evaluation Criteria :
 
